@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>INSTAGRAM 11 NOV</title>
+</head>
+<body>
+    
+<div class="container col-lg-9  d-flex">
+    <div class="row gap-3 my-3">
+        <div class="col-lg-6">
+            <div class="card border-1">
+            <div  class="image">
+                <img width=
+                "100%" src="2x.png" alt="">
+                <div class="images">
+                    <img class="pic" width="120px" src="screenshot1-1x.png" alt="">
+                    <img class="pic" width="120px" src="screenshot2-2x.png" alt="">
+                    <img class="pic" width="120px" src="screenshot3-3x.png" alt="">
+                    <img class="pic" width="120px" src="screenshot4-4x.png" alt="">
+
+                </div>
+                </div>
+            </div>
+        </div>
+        
+</div> 
+
+<div class="col-lg-6 my-3">
+            <div class="card border-1 p-0">
+            <form>
+   
+                <img width="200px"class="d-block m-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJxCl4AJyJtz8xnJgKEGYdFaFk9pC86Nr3uw&usqp=CAU" alt="">
+                <input type="text"placeholder="phone number,username,or email" class="form-control my-2 text-center ">  
+                <input type="password"placeholder="password" class="form-control my-2 text-center">
+                <button class="btn btn-info text-center text-bold w-100 my-2 text-white text-bold">Log in</button>  
+               <div class="d-flex align-items-center container gap-3">
+                <hr class="w-50">
+                <p class="m-0 gap-3">OR</p>
+                <hr class="w-50">
+               </div> 
+               <div class="my-5">
+                <h6 class="text-center m"><i class="bi bi-facebook p-2"></i>log in with Facebook</h6>
+               </div>
+                <div>
+                    <p class="text-center text-bold m">Forgot password?</p>
+                </div>
+        </form>
+        
+        
+        </div>
+        <div class="card my-2">
+            <p class="text-center text-dark">Don't have an account?<span class="text-info">Sign up</span></p>
+            
+        </div>
+        <div class="my-3">
+            <p class="text-center text-bold text-dark">Get the app.</p>
+            <div class="d-flex text-center">
+            <img width="150px"class="d-block m-auto" src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="">
+            <img width="150px"class="d-block m-auto" src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+            
+  
+<script>
+let imgs = document.querySelectorAll('.pic');
+console.log(imgs)
+let num=0;
+
+setInterval(()=>{
+    imgs[num].style.opacity = '0';
+    num++;
+    if(num>=imgs.length){
+        num=0;
+    }
+    imgs[num+1].style.opacity = '1';
+
+},2000)
+</script>
+
+
+</body>
+</html>
